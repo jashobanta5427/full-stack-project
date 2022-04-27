@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana';
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+  /* home */
+  
+  .home{
+  
+  text-align: center; width: 100%;
+  
+  overflow-y: auto;
+  }
+  
+  header{
+  
+  position: absolute;
+  
+  top:-10px;
+  
+  width: 100%;
+  
+  height: 70px;
+  
+  background-color: cornflowerblue;
+  
   color: white;
+  
+  border-radius: 3px;
+  }
+  
+  .card {
+  
+  margin-left: 70px;
+  
+  width: 350px;
+  
+  height: 220px;
+  
+  border: none;
+  
+  border-radius: 5px; float:left;
+
+  gap: 10px;
+
+background: Linear-gradient (90deg, Orgba(2,0,36,1) et, Orgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+color: white;
+
+margin-bottom: 50px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.card:hover{
+
+box-shadow: eee Orgba(0, 0, 0, 0.2), 0 0 20px 2px rgba(0, 0, 0, 0.19);
+
+-ms-transform: scale(1.05); /* IE 9 */
+
+-webkit-transform: scale(1.05); /* Safari 3-8 */
+
+transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardContainer {
+
+position: absolute;
+
+top: 100px;
 }
+
+.card ul{
+
+position: relative;
+
+top: 10px;
+
+list-style: none;
+
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+font-size: 20px;
+
+}
+
+.card .btn{
+
+width: 100px;
+
+height: 30px;
+
+border: none;
+
+border-radius: 3px;
+
+background-color: rgb(56, 56, 56);
+
+color: white;
+
+cursor: pointer;
+}
+
+.cardContainer{ margin: 0 auto 0 auto;
+}
+.header {
+
+height: 60px;
+
+text-align: left;
+
+cursor: default;
+}
+
+.header li {
+  padding: 3px;
+ }
+ .footer {
+ 
+ position: absolute;
+ 
+ left: 0px; bottom: -130px;
+ 
+ width: 350px;
+ 
+ height: 40px;
+ 
+ opacity: 0.5;
+ 
+ color: black;
+ 
+ background-color: rgb(201, 201, 201); cursor: default;
+ 
+ border-radius: 00 3px 3px;
+ 
+ text-align: left;
+ }
+ .footer li{
+ 
+ margin-top: 5px; padding-left: 10px;
+ }
+ .drop{
+ 
+ position: absolute;
+ 
+ top: 110px;
+ 
+ right: 10px;
+ 
+ width: 100px;
+ 
+ height: 30px;
+
+ border: none;
+
+border-radius: 3px;
+
+background-color: rgb(56, 56, 56);
+
+color: white;
+
+cursor: pointer;
+}
+
+/* home */
