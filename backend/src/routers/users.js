@@ -61,8 +61,9 @@ usersRouter.patch('/courses/rating/:id', async(req, res) => {
         })
     }
 
-    course.rating = (course.rating * course.noofRatings) + parseInt(req.body.rating)
+    const rating = (course.rating * course.noofRatings) + parseFloat(req.body.rating)
     course.noofRatings = course.noofRatings + 1
+    course.rating = (rating / parseFloat(course.noofRatings)).toFixed(1)
     course.isRated = true
 
     await course.save()
